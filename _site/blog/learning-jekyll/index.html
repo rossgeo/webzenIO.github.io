@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Learning Jekyll/Liquid Templating</title>
+    <meta name="description" content="Great Web Agency offfers high impact yet affordable we development services. From web design to targeted SEO to custom we applications." />
+    <base href="https://webzenio.github.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Js -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/min/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/google-map-init.js"></script>
+
+
+    <script src="js/main.js"></script>
+
+
+  </head>
+  <body>
+
+
+
+    <!-- Header Start -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- header Nav Start -->
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <img src="img/logo.png" alt="Logo">
+                </a>
+              </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="index.html">Home</a></li>
+      <!-- need the forward slash when testing url -->
+                    <li ><a href="about-us.html">About Us</a></li>
+                    <li ><a href="portfolio.html">Portfolio</a></li>
+                    <li ><a href="blog.html">Blog</a></li>
+                    <li ><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header><!-- header close -->
+    
+    
+            <!-- Slider Start -->
+        <section id="global-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="block">
+                  <h1>Learning Jekyll/Liquid Templating</h1>
+                  
+                  <p>create a ultra fast cms that scales with you</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+<article id="post">
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Learning Jekyll/Liquid Templating</h1>
+
+                <!-- Author -->
+                <p class="lead">
+                    by <a href="#">Carl Boettiger</a>
+                </p>
+
+                <hr>
+
+                <!-- Date/Time --><!-- filter format data e.g. upcase -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on October 20, 2017</p>
+
+                <hr>
+                
+                   <!-- Preview Image -->
+                   
+                   <img class="img-responsive" src="http://placehold.it/900x300" alt="Time is an illusion. Lunchtime doubly so."><hr/>
+                   
+                
+
+                
+
+                <!-- Post Content -->
+                
+                <p class="lead">We pay a huge price for the underlying complexity of dynamic code running on a server for every request - a price we could avoid paying when this kind of complexity is not required.</p>
+                
+                
+                <h2 id="some-quick-thoughts-on-learning-jekyll">Some quick thoughts on learning Jekyll</h2>
+<p>After recieving a few queries on how to get started with Jekyll I thought I’d jot down my own opinions here. Of course there is already rather good documentation for the software and plenty of blogs providing tutorials. While no doubt more than adequate, I have more opinions on how to get started actually learning what’s going on than I could easily fit into a tweet, and also a couple favorite links to references so I thought I’d jot down my reply in long form here.</p>
+
+<h3 id="brief-background">Brief Background</h3>
+<p>Jekyll is a fantastic and popular static blogging platform, written in Ruby by a Github founder, Tom Preston-Werner, which powers this site (at least currently). Similar static website generators exist for Python (Hyde) Haskell (yst), and probably others, but Jekyll is quite widespread.</p>
+
+<p>With the (unofficial) slogan of the bloging platform for hackers, Jekyll is aimed at folks who don’t mind a little coding. If you’re looking for a polished, user-friendly product where a huge community of developers has written most imaginable extensions, check out Wordpress.org. If you want something where you can easily get into the guts and customize everything, Jekyll may be the best game in town. Compared to a dynamic site, a static site is much more lightweight, which translates into faster, more stable, and less expensive. What’s not to like?</p>
+
+<p>Where to start?
+A couple pre-configured Jekyll setups have emerged to reduce the learning curve, most notably Octopress and Jekyll Bootstrap. In my opinion, in an attempt to make things easier through tricks such as automated Ruby makefiles (Rakefiles) I think these projects have actually made Jekyll appear much more complicated than it really is, as evidenced by the number of talented programmers running Octopress with the identical configuration. They may get you started faster, but their use of advanced techniques to provide more functionality out-of-the-box makes for a tougher learning curve.</p>
+
+<p>See the Jekyll-Bootstrap’s introduction to Jekyll for a nice explanation of how Jekyll is laid out. Understand the basic YAML headers, and the role of the and you’ve mastered the basics. Or read on below for my take on getting started.</p>
+
+
+
+                <hr>
+                
+                
+                  
+                  
+                  <span class="next-link pull-right">
+                    <a rel="next" href="/blog/benefits-of-a-static-website-generator/">Next article</a>
+                  </span>
+                  
+                              
+               
+                
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    
+                    
+                     <!-- limit:1 -->
+                     <h4><a href="https://webzenio.github.io//category/jekyll.html">Jekyll</a></h4>
+                   
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                               
+                                
+                                <li><a href="/blog/ultra-fast-blog/">Ultra Fast Blog</a></li>
+                                
+                              
+                                
+                              
+                            </ul>
+                        </div>
+                    </div>
+                        <!-- limit:1 -->
+                     <h4><a href="https://webzenio.github.io//category/static_sites.html">Static_sites</a></h4>
+                   
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                               
+                                
+                                <li><a href="/blog/benefits-of-a-static-website-generator/">Benefits of Static Site Generators</a></li>
+                                
+                              
+                                
+                              
+                            </ul>
+                        </div>
+                    </div>
+                       
+                       
+                    <!-- /.row -->
+                </div>
+
+                <!-- Side Widget Well -->
+                <div class="well">
+                    <h4>Side Widget Well</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </div>
+</article>
+
+   
+
+    
+    
+      <!-- footer Start -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-manu">
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Terms</a></li>
+              </ul>
+            </div>
+            <p>Copyright &copy; Design & Developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+            
+            
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+            
+    <!-- disqus -->
+    <script id="dsq-count-scr" src="//web-zen.disqus.com/count.js" async></script>
+    <!--
+  Append #disqus_thread to the href attribute in your links.
+  This will tell Disqus which links to look up and return the comment count.
+  For example: <a href="http://foo.com/bar.html#disqus_thread">Link</a>.
+    -->
+    </body>
+</html>

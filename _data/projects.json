@@ -1,0 +1,40 @@
+[
+  
+  {
+    "category": "Branding",
+    "imgurl" : "img/portfolio/work1.jpg",
+    "title" : "Telsa Motors",
+    "content" : "Labore et dolore magna aliqua. Ut enim ad"
+  },
+  {
+    "category" : "Websites",
+    "imgurl" : "img/portfolio/work2.jpg",
+    "title" : "Tesla Motors",
+    "content" : "Labore et dolore magna aliqua. Ut enim ad"
+  },
+  {
+    "category" : "Graphic",
+    "imgurl" : "img/portfolio/work3.jpg",
+    "title" : "Tesla Motors",
+    "content" : "Labore et dolore magna aliqua. Ut enim ad"
+  },
+  {
+    "category" : "Design",
+    "imgurl" : "img/portfolio/work4.jpg",
+    "title" : "Tesla Motors",
+    "content" : "Labore et dolore magna aliqua. Ut enim ad"
+  },
+  {
+    "category" : "Video",
+    "imgurl" : "img/portfolio/work5.jpg",
+    "title" : "Tesla Motors",
+    "content" : "Labore et dolore magna aliqua. Ut enim ad"
+  },
+  {
+    "category" : "Graphic",
+    "imgurl" : "img/portfolio/work6.jpg",
+    "title" : "Tesla Motors",
+    "content" : "Labore et dolore magna aliqua. Ut enim ad"
+  }
+
+]
